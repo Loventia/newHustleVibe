@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage.BindingContext xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:heelpers="clr-namespace:DemoApp.Helpers"
+             xmlns:vm="clr-namespace:HustleVibe.LoginView"
+             x:Class="HustleVibe.Views.LoginView">
+             
+    
+</ContentPage.BindingContext>
+    <vm:LoginViewModel/>
+    </ContentPage.BindingContext>
+<ContentPage.Content>
+        <Grid Padding="20" VerticalOptions="Center">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <StackLayout Grid.Row="0" VerticalOptions="Center">
+                <Image Source="https://www.google.co.za/imgres?imgurl=https%3A%2F%2Fpng.pngitem.com%2Fpimgs%2Fs%2F235-2350794_login-icons-png-transparent-personal-profile-icon-png.png&imgrefurl=https%3A%2F%2Fwww.pngitem.com%2Fmiddle%2Fhohxmom_login-icons-png-transparent-png%2F&tbnid=ZEB1WASKFZoBCM&vet=12ahUKEwjW__iOl_34AhUFGRoKHYRtA40QMyheegUIARCkAQ..i&docid=J_NYuBsfeeIctM&w=309&h=280&q=login%20image%20png&ved=2ahUKEwjW__iOl_34AhUFGRoKHYRtA40QMyheegUIARCkAQ"
+                     WidthRequest="100" HeightRequest="300" />
+                
+
+                <Label Text="Login Form" FontFamily="CabinSkectch"
+                       TextColor="Purple" FontSize="40" HorizontalOptions="Center" />
+            </StackLayout>
+
+            <StackLayout Grid.Row="1" Spacing="10">
+                <Entry Placeholder="Enter Username" Text="{Binding Username}" />
+                <Entry Placeholder="Enter Password" Text="{Binding Password}" IsPassword="True"/>
+
+                <Button Text="Login" HorizontalOptions="Center" BackgroundColor="Purple"
+                        TextColor="White" WidthRequest="200" Heightrequest="60" CornerRadius="20"
+                        Command="{Binding LoginCommand}"
+                        />
+                
+                <Label Text="New Users :"/>
+
+                <Button Text="Login" HorizontalOptions="Center" BackgroundColor="Purple"
+                        TextColor="White" WidthRequest="200" HeightRequest="60" CornerRadius="20"
+                        Command="{Binding RegisterCommand}"
+                        />
+
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
