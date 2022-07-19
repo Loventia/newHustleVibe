@@ -29577,6 +29577,9 @@ namespace HustleVibe.Droid
 			// aapt resource value: 17
 			public const int ActionBar_icon = 17;
 			
+			// aapt resource value: 17
+			public const int ActionBar_icon = 17;
+			
 			// aapt resource value: 18
 			public const int ActionBar_indeterminateProgressStyle = 18;
 			
@@ -29639,6 +29642,15 @@ namespace HustleVibe.Droid
 			// aapt resource value: 2
 			public const int ActionMode_closeItemLayout = 2;
 			
+			// aapt resource value: 0
+			public const int ActionMode_background = 0;
+			
+			// aapt resource value: 1
+			public const int ActionMode_backgroundSplit = 1;
+			
+			// aapt resource value: 2
+			public const int ActionMode_closeItemLayout = 2;
+			
 			// aapt resource value: 3
 			public const int ActionMode_height = 3;
 			
@@ -29647,6 +29659,11 @@ namespace HustleVibe.Droid
 			
 			// aapt resource value: 5
 			public const int ActionMode_titleTextStyle = 5;
+			
+			// aapt resource value: { 0x7F030170,0x7F0301DE }
+			public static int[] ActivityChooserView = new int[] {
+					2130903408,
+					2130903518};
 			
 			// aapt resource value: { 0x7F030170,0x7F0301DE }
 			public static int[] ActivityChooserView = new int[] {
@@ -29704,6 +29721,12 @@ namespace HustleVibe.Droid
 			
 			// aapt resource value: 3
 			public const int AlertDialog_listItemLayout = 3;
+			
+			// aapt resource value: 4
+			public const int AlertDialog_listLayout = 4;
+			
+			// aapt resource value: 5
+			public const int AlertDialog_multiChoiceItemLayout = 5;
 			
 			// aapt resource value: 4
 			public const int AlertDialog_listLayout = 4;
@@ -29792,11 +29815,23 @@ namespace HustleVibe.Droid
 					2130903913,
 					2130903914};
 			
+			// aapt resource value: { 0x7F030361,0x7F030362,0x7F030364,0x7F030365 }
+			public static int[] AppBarLayoutStates = new int[] {
+			
 			// aapt resource value: 0
 			public const int AppBarLayoutStates_state_collapsed = 0;
 			
+			// aapt resource value: 2
+			public const int AppBarLayout_android_keyboardNavigationCluster = 2;
+			
 			// aapt resource value: 1
 			public const int AppBarLayoutStates_state_collapsible = 1;
+			
+			// aapt resource value: 3
+			public const int AppBarLayout_elevation = 3;
+			
+			// aapt resource value: 4
+			public const int AppBarLayout_expanded = 4;
 			
 			// aapt resource value: 2
 			public const int AppBarLayoutStates_state_liftable = 2;
@@ -29806,6 +29841,9 @@ namespace HustleVibe.Droid
 			
 			// aapt resource value: 0
 			public const int AppBarLayout_android_background = 0;
+			
+			// aapt resource value: 2
+			public const int AppBarLayout_android_keyboardNavigationCluster = 2;
 			
 			// aapt resource value: 2
 			public const int AppBarLayout_android_keyboardNavigationCluster = 2;
@@ -30773,6 +30811,8 @@ namespace HustleVibe.Droid
 			
 			// aapt resource value: 7
 			public const int CardView_cardUseCompatPadding = 7;
+			
+			// aapt resource value: 7
 			
 			// aapt resource value: 8
 			public const int CardView_contentPadding = 8;
@@ -34746,6 +34786,30 @@ namespace HustleVibe.Droid
 					2130903918,
 					2130903919};
 			
+			// aapt resource value: 2
+			public const int ListPreference_entries = 2;
+			
+			// aapt resource value: 3
+			public const int ListPreference_entryValues = 3;
+			
+			// aapt resource value: 4
+			public const int ListPreference_useSimpleSummaryProvider = 4;
+			
+			// aapt resource value: { 0x7F030049,0x7F03004A,0x7F03004B,0x7F03004C }
+			public static int[] MaterialAlertDialog = new int[] {
+					2130903113,
+					2130903114,
+					2130903115,
+					2130903116};
+			
+			// aapt resource value: { 0x7F030264,0x7F030265,0x7F030266,0x7F030267,0x7F030268 }
+			public static int[] MaterialAlertDialogTheme = new int[] {
+					2130903652,
+					2130903653,
+					2130903654,
+					2130903655,
+					2130903656};
+			
 			// aapt resource value: 0
 			public const int MaterialCardView_android_checkable = 0;
 			
@@ -34754,6 +34818,12 @@ namespace HustleVibe.Droid
 			
 			// aapt resource value: 2
 			public const int MaterialCardView_checkedIcon = 2;
+			
+			// aapt resource value: 1
+			public const int MaterialAlertDialogTheme_materialAlertDialogTheme = 1;
+			
+			// aapt resource value: 2
+			public const int MaterialAlertDialogTheme_materialAlertDialogTitleIconStyle = 2;
 			
 			// aapt resource value: 3
 			public const int MaterialCardView_checkedIconMargin = 3;
