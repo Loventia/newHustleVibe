@@ -1,0 +1,15 @@
+C:\New HustleVibe\HustleVibeSln\HustleVibe\HustleVibe\bin\Debug\netstandard2.0\HustleVibe.deps.json
+C:\New HustleVibe\HustleVibeSln\HustleVibe\HustleVibe\bin\Debug\netstandard2.0\HustleVibe.dll
+C:\New HustleVibe\HustleVibeSln\HustleVibe\HustleVibe\bin\Debug\netstandard2.0\HustleVibe.pdb
+C:\New HustleVibe\HustleVibeSln\HustleVibe\HustleVibe\obj\Debug\netstandard2.0\HustleVibe.csproj.AssemblyReference.cache
+C:\New HustleVibe\HustleVibeSln\HustleVibe\HustleVibe\obj\Debug\netstandard2.0\HustleVibe.GeneratedMSBuildEditorConfig.editorconfig
+C:\New HustleVibe\HustleVibeSln\HustleVibe\HustleVibe\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\New HustleVibe\HustleVibeSln\HustleVibe\HustleVibe\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\New HustleVibe\HustleVibeSln\HustleVibe\HustleVibe\obj\Debug\netstandard2.0\HustleVibe.AssemblyInfoInputs.cache
+C:\New HustleVibe\HustleVibeSln\HustleVibe\HustleVibe\obj\Debug\netstandard2.0\HustleVibe.AssemblyInfo.cs
+C:\New HustleVibe\HustleVibeSln\HustleVibe\HustleVibe\obj\Debug\netstandard2.0\HustleVibe.csproj.CoreCompileInputs.cache
+C:\New HustleVibe\HustleVibeSln\HustleVibe\HustleVibe\obj\Debug\netstandard2.0\XamlC.stamp
+C:\New HustleVibe\HustleVibeSln\HustleVibe\HustleVibe\obj\Debug\netstandard2.0\HustleVibe.dll
+C:\New HustleVibe\HustleVibeSln\HustleVibe\HustleVibe\obj\Debug\netstandard2.0\refint\HustleVibe.dll
+C:\New HustleVibe\HustleVibeSln\HustleVibe\HustleVibe\obj\Debug\netstandard2.0\HustleVibe.pdb
+C:\New HustleVibe\HustleVibeSln\HustleVibe\HustleVibe\obj\Debug\netstandard2.0\ref\HustleVibe.dll

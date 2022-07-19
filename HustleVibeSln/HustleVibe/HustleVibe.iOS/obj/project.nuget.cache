@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "xzoQizNGHrMHsIBVl2jqlENx3h7ZZgilL82Dd79aExP5qTJwiKHGft6NVsvoJRyNzEtImpeMX7zw+zVpV9zQAg==",
+  "success": true,
+  "projectFilePath": "C:\\New HustleVibe\\HustleVibeSln\\HustleVibe\\HustleVibe.iOS\\HustleVibe.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Shafieqah\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Shafieqah\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\Shafieqah\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}
