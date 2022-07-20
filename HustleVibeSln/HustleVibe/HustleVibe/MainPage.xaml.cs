@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HustleVibe.Views;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -19,7 +20,7 @@ namespace HustleVibe
         {
             base.OnAppearing();
             await Task.Delay(5000);
-            await Navigation.PushAsync(new LoginPage());
+            await Navigation.PushAsync(new LoginView());
         }
     }
 }

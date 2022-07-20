@@ -4,8 +4,8 @@
              x:Class="HustleVibe.MainPage">
 
     <StackLayout BackgroundColor="White">
-        <Image Source="betheceoofyourlife.png"
-               HeightRequest="600" Aspect="Fill" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+        <Image Source="betheceoofyourlife.png" Aspect="Fill" HeightRequest="600" VerticalOptions="Center" HorizontalOptions="CenterAndExpand"/>
+
     </StackLayout>
 
 </ContentPage>
