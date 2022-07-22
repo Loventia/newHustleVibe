@@ -16,5 +16,15 @@ namespace HustleVibe.Views
         {
             InitializeComponent();
         }
+
+        private void ButtonCategories_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ButtonProducts_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }

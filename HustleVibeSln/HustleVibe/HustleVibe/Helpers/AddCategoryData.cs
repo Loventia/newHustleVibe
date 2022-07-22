@@ -5,16 +5,16 @@ using System.Threading.Tasks;
 using Firebase.Database.Query;
 using System.Linq;
 using HustleVibe.Model;
+using Firebase.Database;
 
-     
 namespace HustleVibe.Helpers
 {
-    public  class AddCategoryData
+    public class AddCategoryData
     {
         public List<Category> Categories { get; set; }
         FirebaseClient client;
 
-        public AddCategoryData() 
+        public AddCategoryData()
         {
             client = new FirebaseClient("https://hustlevibe-193fb-default-rtdb.firebaseio.com/");
             Categories = new List<Category>()
@@ -63,10 +63,10 @@ namespace HustleVibe.Helpers
             };
         }
 
-        private async Task AddCategoriesAsync()
+        private async Task<List<Category>> AddCategoriesAsync()
         {
-            var categories = (await client.Child("Categories"))
-                .OnceAsync<Category>()
+            var categories = (await client.Child("Categories")
+                .OnceAsync<Category>())
                 .Select(c => new Category
 
                 {
@@ -75,9 +75,10 @@ namespace HustleVibe.Helpers
                     CategoryPoster = c.Object.CategoryPoster,
                     ImageUrl = c.Object.ImageUrl
                 }).ToList();
-            return Categories;
-        }
 
+            return categories;
+
+        }
     }
 }
 

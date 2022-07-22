@@ -1,4 +1,5 @@
 ﻿using HustleVibe.Services;
+using HustleVibe.Views;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -75,7 +76,7 @@ namespace HustleVibe.ViewModel
 
 
 
-        public loginViewModel()
+        public LoginViewModel()
         {
             LoginCommand = new Command(async () => await LoginCommandAsync());
             RegisterCommand = new Command(async () => await RegisterCommandAsync());

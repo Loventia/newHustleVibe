@@ -8,7 +8,7 @@ namespace HustleVibe.Model
     {
         public int CategoryID { get; set; }
         public string CategoryName { get; set; }
-        public int CategoryPoster { get; set; }
+        public string CategoryPoster { get; set; }
         public string ImageUrl { get; set; }
     }
 }
