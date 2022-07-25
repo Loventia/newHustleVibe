@@ -4,7 +4,7 @@
              x:Class="HustleVibe.Views.ProductDetailsView">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Product details View"/>
+            <Label Text="Product details View"
             VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
         </StackLayout>
