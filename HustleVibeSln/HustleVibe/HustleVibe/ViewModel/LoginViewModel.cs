@@ -75,7 +75,7 @@ namespace HustleVibe.ViewModel
 
 
 
-        public loginViewModel()
+        public LoginViewModel()
         {
             LoginCommand = new Command(async () => await LoginCommandAsync());
             RegisterCommand = new Command(async () => await RegisterCommandAsync());
@@ -122,7 +122,7 @@ namespace HustleVibe.ViewModel
                 if (Result)
                 {
                     Preferences.Set("Username", UserName);
-                    await Application.Current.MainPage.Navigation.PushModalAsync(new ProductsView());
+                  //  await Application.Current.MainPage.Navigation.PushModalAsync(new ProductsView());
                 }
                 else 
                 {

@@ -1,5 +1,10 @@
-﻿using System;
-
+﻿using HustleVibe.Model;
+using HustleVibe.Services;
+using System;
+using System.Collections.ObjectModel;
+using System.Threading.Tasks;
+using Xamarin.Essentials;
+using Xamarin.Forms;
 
 namespace HustleVibe.ViewModel
 {
@@ -10,7 +15,7 @@ namespace HustleVibe.ViewModel
         {
             set
             {
-                _UserName = value;
+                _userName = value;
                 OnPropertyChanged();
             }
             get
@@ -43,9 +48,9 @@ namespace HustleVibe.ViewModel
         public Command ViewCartCommand { get; set; }
         public Command LogoutCommand { get; set; }
 
-        public ProductsViewModel()
+        public ProductsViewModel(Item selectedItem)
         {
-            var name = Preference.Get("Username,string.Empty");
+            var name = Preferences.Get("Username",string.Empty);
             if (string.IsNullOrEmpty(name))
                 UserName = "Guest";
             else
@@ -65,13 +70,13 @@ namespace HustleVibe.ViewModel
 
         private async Task ViewCartAsync()
         {
-            await Application.Current.Mainpage.Navigation.PushModalAsync(new CartView());
+            await Application.Current.MainPage.Navigation.PushModalAsync(new CartView());
         }
 
         private async Task LogoutAsync()
 
         {
-            await Application.Current.Mainpage.Navigation.PushModalAsync(new LogoutView());
+            await Application.Current.MainPage.Navigation.PushModalAsync(new LogoutView());
         }
             private async void  GetCategories()
             {
@@ -79,7 +84,7 @@ namespace HustleVibe.ViewModel
               Categories.Clear();
               foreach(var item in data)
               {
-                  Categories.add(items);
+                  Categories.Add(item);
               }
 
             }
@@ -90,7 +95,7 @@ namespace HustleVibe.ViewModel
                LatestItems.Clear();
                foreach(var item in data)
                {
-                  LatestItems.Add(items);
+                  LatestItems.Add(item);
                }
 
             }
