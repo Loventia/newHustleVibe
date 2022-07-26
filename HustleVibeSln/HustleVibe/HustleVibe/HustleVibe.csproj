@@ -20,7 +20,6 @@
 
   <ItemGroup>
     <Folder Include="Fonts\" />
-    <Folder Include="Helpers\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -30,13 +29,16 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Views\LoginView.xaml">
+    <EmbeddedResource Update="Views\CartView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\OrdersHistoryView.xaml">
+    <EmbeddedResource Update="Views\CategoryView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\OrdersView.xaml">
+    <EmbeddedResource Update="Views\ProductsView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\SearchResultView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\SettingsPage.xaml">

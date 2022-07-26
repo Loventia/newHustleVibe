@@ -20,9 +20,8 @@ namespace HustleVibe.Model
         public int HomeSelected { get; set; }
         public string Price { get; set; }
         public string CategoryID { get; set; }
-
     }
-}
+} 
 
    
     

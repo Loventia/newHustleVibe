@@ -11,7 +11,8 @@ namespace HustleVibe
             InitializeComponent();
 
             // MainPage = new MainPage();
-            MainPage = new LoginView();
+            //MainPage = new LoginView();
+            MainPage = new Navigation(new SettingsPage());
         }
 
         protected override void OnStart()

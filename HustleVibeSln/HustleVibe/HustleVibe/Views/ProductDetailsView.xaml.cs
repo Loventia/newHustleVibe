@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace HustleVibe.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class SettingsPage : ContentPage
+    public partial class ProductDetailsView : ContentPage
     {
-        public SettingsPage()
+        public ProductDetailsView(Item Item)
         {
             InitializeComponent();
         }
