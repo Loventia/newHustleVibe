@@ -9,7 +9,7 @@ using Xamarin.Forms.Xaml;
 
 namespace HustleVibe.Views
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
+    [XamlCompilation (XamlCompilationOptions.Compile)]
     public partial class CartView : ContentPage
     {
         public CartView()

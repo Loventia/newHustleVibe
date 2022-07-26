@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Linq;
-using System.Threading.Task;
+using System.Threading.Tasks;
 using Xamarin .Essentials;
 using Xamarin.Forms;
-using Xamarin.Form.Xaml;
+using Xamarin.Forms.Xaml;
 
 namespace HustleVibe.Views
 {
