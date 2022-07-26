@@ -1,4 +1,6 @@
-﻿using System;
+﻿using HustleVibe.Model;
+using HustleVibe.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,14 +19,15 @@ namespace HustleVibe.Views
         {
             InitializeComponent();
             cvm =  new  CategoryViewModel(category);
-            this.BindingContextb = cvm;
+            this.BindingContext = cvm;
         }
-    }   async void ImageButton_Clicked(System.Object sender, system.EvenArgs e)
+
+       async void ImageButton_Clicked(System.Object sender, SelectionChangedEventArgs e)
     {
-        var selectedProduct = e.CurrentSelction.FirstOrDefault() as Item;
+        var selectedProduct = e.CurrentSelection.FirstOrDefault() as Item;
         if (selectedProduct != null)
             return;
         await Navigation.PushModalAsync(new ProductsViewModel(selectedProduct));
-        ((CollectiveView)sender).SelectedItem = null;
+        ((CollectionView)sender).SelectedItem = null;
     }
 }
