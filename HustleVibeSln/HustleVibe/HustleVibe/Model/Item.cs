@@ -18,8 +18,8 @@ namespace HustleVibe.Model
         public string Rating { get; set; }
         public string RatingDetail { get; set; }
         public int HomeSelected { get; set; }
-        public string Price { get; set; }
-        public string CategoryID { get; set; }
+        public decimal Price { get; set; }
+        public int CategoryID { get; set; }
 
     }
 }

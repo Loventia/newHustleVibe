@@ -1,4 +1,18 @@
 ﻿using System;
+using HustleVibe.Helpers;
+using HustleVibe.Model;
+using HustleVibe.Services;
+using HustleVibe.Views;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Text;
+using System.Threading.Tasks;
+using Xamarin.Essentials;
+using Xamarin.Forms;
+using Xamarin.Forms.Internals;
+using static System.Net.Mime.MediaTypeNames;
+using Application = Xamarin.Forms.Application;
+
 
 
 namespace HustleVibe.ViewModel
@@ -10,7 +24,7 @@ namespace HustleVibe.ViewModel
         {
             set
             {
-                _UserName = value;
+                _userName = value;
                 OnPropertyChanged();
             }
             get
@@ -45,7 +59,7 @@ namespace HustleVibe.ViewModel
 
         public ProductsViewModel()
         {
-            var name = Preference.Get("Username,string.Empty");
+            var name = Preferences.Get("Username", string.Empty);
             if (string.IsNullOrEmpty(name))
                 UserName = "Guest";
             else
@@ -56,22 +70,23 @@ namespace HustleVibe.ViewModel
             Categories = new ObservableCollection<Category>();
             LatestItems = new ObservableCollection<Item>();
 
-            ViewCartCommand = new Command(async() = await ViewCartAsync());
-            LogoutCommand = new Command(async() = await LogoutAsync());
+            ViewCartCommand = new Command(async () => { await ViewCartAsync(); });
+            LogoutCommand = new Command(async () => { await LogoutAsync(); });
 
             GetCategories();
             GetLatestItems();
         }
 
+
         private async Task ViewCartAsync()
         {
-            await Application.Current.Mainpage.Navigation.PushModalAsync(new CartView());
+            await Application.Current.MainPage.Navigation.PushAsync(new CartView());
         }
 
         private async Task LogoutAsync()
 
         {
-            await Application.Current.Mainpage.Navigation.PushModalAsync(new LogoutView());
+            await Application.Current.MainPage.Navigation.PushAsync(new LogoutView());
         }
             private async void  GetCategories()
             {
@@ -79,7 +94,7 @@ namespace HustleVibe.ViewModel
               Categories.Clear();
               foreach(var item in data)
               {
-                  Categories.add(items);
+                  Categories.Add(item);
               }
 
             }
@@ -90,7 +105,7 @@ namespace HustleVibe.ViewModel
                LatestItems.Clear();
                foreach(var item in data)
                {
-                  LatestItems.Add(items);
+                  LatestItems.Add(item);
                }
 
             }
