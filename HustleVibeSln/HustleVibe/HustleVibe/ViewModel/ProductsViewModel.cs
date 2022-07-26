@@ -1,4 +1,6 @@
-﻿using System;
+﻿using HustleVibe.Model;
+using HustleVibe.Services;
+using System;
 using HustleVibe.Helpers;
 using HustleVibe.Model;
 using HustleVibe.Services;
@@ -57,7 +59,7 @@ namespace HustleVibe.ViewModel
         public Command ViewCartCommand { get; set; }
         public Command LogoutCommand { get; set; }
 
-        public ProductsViewModel()
+        public ProductsViewModel(Item selectedItem)
         {
             var name = Preferences.Get("Username", string.Empty);
             if (string.IsNullOrEmpty(name))

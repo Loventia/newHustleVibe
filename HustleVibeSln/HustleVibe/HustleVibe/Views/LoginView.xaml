@@ -32,8 +32,13 @@
                         TextColor="White" WidthRequest="200" HeightRequest="60" CornerRadius="20"
                         Command="{Binding LoginCommand}"
                         />
-                
-                <Label Text="New Users :"/>
+
+            <Button Text="Guest" HorizontalOptions="Center" BackgroundColor="Purple"
+                        TextColor="White" WidthRequest="200" HeightRequest="60" CornerRadius="20"
+                        Command="{Binding GuestCommand}"
+                        />
+
+            <Label Text="New Users :"/>
 
                 <Button Text="Register" HorizontalOptions="Center" BackgroundColor="Purple"
                         TextColor="White" WidthRequest="200" HeightRequest="60" CornerRadius="20"

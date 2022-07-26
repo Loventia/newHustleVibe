@@ -10,13 +10,15 @@ using Xamarin.Forms.Xaml;
 namespace HustleVibe.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class LoginView : ContentPage
+    public partial class LogoutView : ContentPage
     {
-        public LoginView()
+        public LogoutView()
         {
             InitializeComponent();
-            //MainPage = new MainPage();
-           // MainPage = new LoginView();
         }
-      }
+    }    async void ImageButton_Clicked(System.Objecr sender,System.EvenArgs e)
+    {
+         await Navigation.popmoModalAsync (); 
+
+    }
 }

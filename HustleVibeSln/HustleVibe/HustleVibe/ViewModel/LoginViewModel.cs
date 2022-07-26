@@ -123,7 +123,7 @@ namespace HustleVibe.ViewModel
                 if (Result)
                 {
                     Preferences.Set("Username", UserName);
-                    await Application.Current.MainPage.Navigation.PushModalAsync(new ProductsView());
+                  //  await Application.Current.MainPage.Navigation.PushModalAsync(new ProductsView());
                 }
                 else 
                 {
