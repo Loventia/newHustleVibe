@@ -1,5 +1,5 @@
-﻿using DeliveryApp.Models;
-using DeliveryApp.ViewModels;
+﻿using HustleVibe.Model;
+using HustleVibe.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
